@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="452.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.tareas.controlador.IndexControlador">
+   <children>
+      <Button fx:id="agreagrBoton" layoutX="144.0" layoutY="379.0" mnemonicParsing="false" onAction="#agregarTarea" text="Agregar">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="modificarBoton" layoutX="293.0" layoutY="379.0" mnemonicParsing="false" onAction="#modificarTarea" text="Modificar">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="eliminarBoton" layoutX="455.0" layoutY="379.0" mnemonicParsing="false" onAction="#eliminarTarea" text="Eliminar">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="limpiarBoton" layoutX="644.0" layoutY="379.0" mnemonicParsing="false" onAction="#limpiarFormulario" text="Limpiar">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <TextField fx:id="nombreTareatxt" layoutX="155.0" layoutY="116.0" />
+      <TextField fx:id="responsabletxt" layoutX="155.0" layoutY="173.0" />
+      <TextField fx:id="estatustxt" layoutX="155.0" layoutY="233.0" />
+      <Label layoutX="246.0" layoutY="14.0" text="Sistema Tareas">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tareaTabla" layoutX="348.0" layoutY="69.0" onMouseClicked="#caragarTareaFormulario" prefHeight="257.0" prefWidth="470.0">
+        <columns>
+          <TableColumn fx:id="idTareaColumna" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tareaColumna" prefWidth="151.0" text="Tarea" />
+            <TableColumn fx:id="responsableColumna" prefWidth="133.0" text="Responsable" />
+            <TableColumn fx:id="estatusColumna" prefWidth="110.0" text="Estatus" />
+        </columns>
+      </TableView>
+      <Label layoutX="32.0" layoutY="114.0" text="Tarea">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="171.0" text="Responsable">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="231.0" text="Estatus">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
